@@ -65,7 +65,7 @@ void UVideoViewUserWidget::onUserOffline(unsigned int uid) {
     });
 }
 
-void UVideoViewUserWidget::onJoinChannelSuccess(const char* channel, uid_t uid, int elapsed) {
+void UVideoViewUserWidget::onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) {
     AsyncTask(ENamedThreads::GameThread, [=]()
     {
         UE_LOG(LogTemp, Warning, TEXT("UVideoViewUserWidget clean =====onJoinChannelSuccess ======"));

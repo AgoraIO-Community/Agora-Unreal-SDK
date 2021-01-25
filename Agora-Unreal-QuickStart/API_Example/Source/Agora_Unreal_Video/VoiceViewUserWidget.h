@@ -36,7 +36,7 @@ public:
     
     void onUserOffline(unsigned int uid);
     
-    void onJoinChannelSuccess(const char* channel, uid_t uid, int elapsed);
+    void onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed);
     
     void onLeaveChannel(const agora::rtc::RtcStats& stats);
 
