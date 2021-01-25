@@ -65,7 +65,7 @@ void AgoraController::onError(int err, const char* msg) {
     UE_LOG(LogTemp, Warning, TEXT("onError err: %d, msg: %s"), err, msg);
 }
 
-void AgoraController::onJoinChannelSuccess(const char* channel, uid_t uid, int elapsed) {
+void AgoraController::onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) {
     UE_LOG(LogTemp, Warning, TEXT("onJoinChannelSuccess channel: %s, uid: %u"), channel, uid);
     if(_videoWidget) {
         _videoWidget->onJoinChannelSuccess(channel, uid, elapsed);
@@ -76,7 +76,7 @@ void AgoraController::onJoinChannelSuccess(const char* channel, uid_t uid, int e
     }
 }
 
-void AgoraController::onRejoinChannelSuccess(const char* channel, uid_t uid, int elapsed)
+void AgoraController::onRejoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed)
 {
     UE_LOG(LogTemp, Warning, TEXT("onRejoinChannelSuccess channel"));
 }
@@ -92,7 +92,7 @@ void AgoraController::onLeaveChannel(const RtcStats& stats) {
     }
 }
 
-void AgoraController::onUserJoined(uid_t uid, int elapsed) {
+void AgoraController::onUserJoined(agora::rtc::uid_t uid, int elapsed) {
     UE_LOG(LogTemp, Warning, TEXT("AgoraController::onUserJoined  uid: %u"), uid);
     if(_videoWidget) {
         _videoWidget->onUserJoined(uid);
@@ -103,7 +103,7 @@ void AgoraController::onUserJoined(uid_t uid, int elapsed) {
     }
 }
 
-void AgoraController::onUserOffline(uid_t uid, USER_OFFLINE_REASON_TYPE reason) {
+void AgoraController::onUserOffline(agora::rtc::uid_t uid, USER_OFFLINE_REASON_TYPE reason) {
     UE_LOG(LogTemp, Warning, TEXT("onUserOffline  uid: %u"), uid);
     if(_videoWidget) {
         _videoWidget->onUserOffline(uid);

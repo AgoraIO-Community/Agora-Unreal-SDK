@@ -37,9 +37,9 @@ public:
     
     void onError(int err, const char* msg) override;
     
-    void onJoinChannelSuccess(const char* channel, uid_t uid, int elapsed) override;
+    void onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) override;
 
-    void onRejoinChannelSuccess(const char* channel, uid_t uid, int elapsed) override;
+    void onRejoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) override;
     
     void onLeaveChannel(const agora::rtc::RtcStats& stats) override;
     
