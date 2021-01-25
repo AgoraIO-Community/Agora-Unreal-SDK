@@ -1,0 +1,14 @@
+{
+	"files.exclude": {
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Saved": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Content": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/MacNoEditor": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Android_DXT": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/DerivedDataCache": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/.vscode": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Intermediate": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Plugins/AgoraPlugin/Doc": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Plugins/AgoraPlugin/HowTo": true,
+		"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Plugins/AgoraPlugin/Intermediate": true
+	}
+}

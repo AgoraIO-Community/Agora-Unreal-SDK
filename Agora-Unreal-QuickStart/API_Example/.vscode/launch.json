@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Agora_Unreal_Video (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_Video Mac Debug Build",
+			"program": "/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_Video (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_Video Mac DebugGame Build",
+			"program": "/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_Video (Development)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_Video Mac Development Build",
+			"program": "/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_Video (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_Video Mac Shipping Build",
+			"program": "/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_Video (Test)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_Video Mac Test Build",
+			"program": "/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_VideoEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_VideoEditor Mac Debug Build",
+			"program": "/Users/Shared/EpicGames/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject"
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_VideoEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_VideoEditor Mac DebugGame Build",
+			"program": "/Users/Shared/EpicGames/UE_4.25/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject"
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Agora_Unreal_VideoEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "Agora_Unreal_VideoEditor Mac Development Build",
+			"program": "/Users/Shared/EpicGames/UE_4.25/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject"
+			],
+			"cwd": "/Users/Shared/EpicGames/UE_4.25",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Users/Shared/EpicGames/UE_4.25/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Users/Shared/EpicGames/UE_4.25"
+		}
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"folders": [
+		{
+			"name": "API_Example",
+			"path": "."
+		},
+		{
+			"name": "UE4",
+			"path": "/Users/Shared/EpicGames/UE_4.25"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"files.associations": {
+			"button.h": "c",
+			"reply.h": "c",
+			"textblock.h": "c",
+			"*.m": "cpp"
+		}
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp",
+			"vadimcn.vscode-lldb",
+			"ms-vscode.mono-debug"
+		]
+	}
+}

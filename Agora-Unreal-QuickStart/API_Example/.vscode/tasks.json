@@ -1,0 +1,995 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Agora_Unreal_Video Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Mac",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"IOS",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Android Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Android DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Android Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Android Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Shipping",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_Video Android Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_Video Android Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_Video",
+				"Android",
+				"Test",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_VideoEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"Debug",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_VideoEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"Agora_Unreal_VideoEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		},
+		{
+			"label": "Agora_Unreal_VideoEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"Agora_Unreal_VideoEditor",
+				"Mac",
+				"Development",
+				"/Users/zt/Documents/work/cross-platform-sdk/Unreal/Agora-Unreal-SDK/Agora-Unreal-QuickStart/API_Example/API_Example.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Users/Shared/EpicGames/UE_4.25"
+			}
+		}
+	]
+}
