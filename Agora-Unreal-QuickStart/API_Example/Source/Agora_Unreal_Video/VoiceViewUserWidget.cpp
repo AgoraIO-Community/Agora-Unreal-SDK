@@ -56,7 +56,7 @@ void UVoiceViewUserWidget::onUserOffline(unsigned int uid) {
 void UVoiceViewUserWidget::onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) {
     UE_LOG(LogTemp, Warning, TEXT("UVoiceViewUserWidget onJoinChannelSuccess channel: %s, uid: %u"), channel, uid);
 
-    PrintLog(format("onJoinChannelSuccess channel: %s, uid: %u\r\n\r\n", channel, uid).c_str());
+    PrintLog(format("onJoinChannelSuccess channel: %s, uid: %u, sdk ver: %s\r\n\r\n", channel, uid, _agoraControllerPtr->getVersion()).c_str());
 }
 
 void UVoiceViewUserWidget::onLeaveChannel(const agora::rtc::RtcStats& stats) {

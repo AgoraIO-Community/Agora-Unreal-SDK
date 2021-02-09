@@ -66,7 +66,8 @@ void AgoraController::onError(int err, const char* msg) {
 }
 
 void AgoraController::onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) {
-    UE_LOG(LogTemp, Warning, TEXT("onJoinChannelSuccess channel: %s, uid: %u"), channel, uid);
+    int build = 0;
+    UE_LOG(LogTemp, Warning, TEXT("onJoinChannelSuccess channel: %s, uid: %u, sdk ver: %s"), channel, uid, _rtcEnginePtr->getVersion(&build));
     if(_videoWidget) {
         _videoWidget->onJoinChannelSuccess(channel, uid, elapsed);
     }
@@ -147,4 +148,9 @@ void AgoraController::SetupRemoteVideo(unsigned int uid, UImage* Brush) {
 
 void AgoraController::ReleaseVideoView(unsigned int uid) {
     _rtcEnginePtr->releaseVideoView(uid);
+}
+
+const char* AgoraController::getVersion() {
+    int build = 0;
+    return _rtcEnginePtr->getVersion(&build);
 }

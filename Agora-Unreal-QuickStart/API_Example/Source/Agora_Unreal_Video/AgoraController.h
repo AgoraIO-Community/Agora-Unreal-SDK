@@ -54,6 +54,8 @@ public:
     void SetVideoViewWidget(UVideoViewUserWidget* videoWidget);
     
     void SetVoiceViewWidget(UVoiceViewUserWidget* voiceWidget);
+
+    const char* getVersion();
 private:
     agora::rtc::ue4::AgoraRtcEngine* _rtcEnginePtr = nullptr;
     UVideoViewUserWidget* _videoWidget = nullptr;
