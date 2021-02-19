@@ -28,13 +28,13 @@
 
 在编译和运行 Demo 之前，你需要先获得一个 APP ID。
 
-1) 在 agora.io(https://console.agora.io/projects?isTrusted=true) 注册一个开发者账号. 在你完成账号登陆后，你就可以访问 dashboard。
+1) 在 [agora.io](https://console.agora.io/projects?isTrusted=true) 注册一个开发者账号. 在你完成账号登陆后，你就可以访问 dashboard。
 2) 在左侧的服务面板中进入 Project Management。
 3) 将 APP ID 从 dashboard 中拷贝并保存下来。
 
 ### 下载并且拷贝 Agora Unreal SDK。
 Agora Unreal SDK 是一个独立的 Unreal 插件 module。
-[下在 Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_FULL_SDK.zip)
+[Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_FULL_SDK.zip)
 下载链接中 Agora Unreal SDK， 解压后将 AgoraPlugin 文件夹拷贝到 API-Example 的 Plugins 文件夹下 "API-Example/Plugins/AgoraPlugin/"。
 
 ![Alt text](README_Picture/copy_plugin.png?raw=true "PackageProject")
@@ -97,3 +97,5 @@ Android 中以下权限需要动态申请，可以通过蓝图类去做。
 4: android.permission.WRITE_EXTERNAL_STORAGE
 
 ![Alt text](README_Picture/Android_permission.png?raw=true "PackageProject")
+
+然后，你就可以运行 Demo 了。

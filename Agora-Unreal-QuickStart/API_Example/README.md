@@ -27,7 +27,7 @@ You can switch the level to be run in Edit/Project Settings/Default maps of Unre
 
 To build and run the sample application, first obtain an app ID:
 
-1) Create a developer account at agora.io(https://console.agora.io/projects?isTrusted=true). Once you finish the sign-up process, you are redirected to the dashboard.
+1) Create a developer account at [agora.io](https://console.agora.io/projects?isTrusted=true). Once you finish the sign-up process, you are redirected to the dashboard.
 2) Navigate in the dashboard tree on the left to "Project Management".
 3) Copy the app ID that you obtain from the dashboard into a text.
 
@@ -35,7 +35,7 @@ To build and run the sample application, first obtain an app ID:
 
 Agora Unreal SDK is an independent unreal plug-in module.
 
-[Download Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_FULL_SDK.zip)
+[Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_FULL_SDK.zip)
 
 Download Agora Unreal SDK from the link, unzip and copy AgoraPlugin folder to "API_Example/ Plugins/AgoraPlugin/" in the Plugins folder of API_Example
 
@@ -116,3 +116,6 @@ In Android, the following permissions need to be applied dynamically, which can 
 4: android.permission.WRITE_EXTERNAL_STORAGE
 
 ![Alt text](README_Picture/Android_permission.png?raw=true "PackageProject")
+
+
+At last,you can run the demo.
