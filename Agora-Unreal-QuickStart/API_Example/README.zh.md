@@ -24,17 +24,29 @@
 
 ## Run Project *IMPORTANT*
 
+ ### Create an Account and Obtain an App ID *IMPORTANT*
+
+在编译和运行 Demo 之前，你需要先获得一个 APP ID。
+
+1) 在 agora.io(https://console.agora.io/projects?isTrusted=true) 注册一个开发者账号. 在你完成账号登陆后，你就可以访问 dashboard。
+2) 在左侧的服务面板中进入 Project Management。
+3) 将 APP ID 从 dashboard 中拷贝并保存下来。
+
 ### 下载并且拷贝 Agora Unreal SDK。
 Agora Unreal SDK 是一个独立的 Unreal 插件 module。
 [下在 Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_FULL_SDK.zip)
-下载链接中 Agora Unreal SDK， 解压后将 AgoraPlugin 文件夹拷贝到 API-Example 的 Plugins 文件夹下 "API-Example/Plugins/AgoraPlugin/".
+下载链接中 Agora Unreal SDK， 解压后将 AgoraPlugin 文件夹拷贝到 API-Example 的 Plugins 文件夹下 "API-Example/Plugins/AgoraPlugin/"。
 
 ![Alt text](README_Picture/copy_plugin.png?raw=true "PackageProject")
 
-### 编译并且运行 Demo。
-用 Unreal Editor 4.25 或以上版本打开 API_Example.uproject。
 
-打包项目：
+### 编译并且运行 Demo。
+
+1) 打开在 "Source/Agora_Unreal_Video/" 位置下的 AgoraController.h 文件，填入 APP ID。 (这一步非常重要，否则 Demo 无法成功运行。)
+
+2) 用 Unreal Editor 4.25 或以上版本打开 API_Example.uproject。
+
+3) 打包项目：
 
 #### Windows 打包
 File->Package Project->Windows->Windows(64-bit)

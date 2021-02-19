@@ -1,12 +1,12 @@
 # API-Example
 
-This is a demo program to demonstrate the API call of Agora Unreal SDK.
+This is a demo program to show how to call API of Agora Unreal SDK.
 
 This demo project contains multiple levels:
 
-- Videolevel contains demo of API call of video.
+- VideoLevel   Show the API call of video.
 
-- Voicelevel contains demo of audio API call.
+- VoiceLevel   Show the API call of audio call.
 
 ![Alt text](README_Picture/Level_List.png?raw=true "PackageProject")
 
@@ -23,6 +23,14 @@ You can switch the level to be run in Edit/Project Settings/Default maps of Unre
 
 ## Run Project *IMPORTANT*
 
+ ### Create an Account and Obtain an App ID *IMPORTANT*
+
+To build and run the sample application, first obtain an app ID:
+
+1) Create a developer account at agora.io(https://console.agora.io/projects?isTrusted=true). Once you finish the sign-up process, you are redirected to the dashboard.
+2) Navigate in the dashboard tree on the left to "Project Management".
+3) Copy the app ID that you obtain from the dashboard into a text.
+
 ### Download and copy Agora Unreal SDK.
 
 Agora Unreal SDK is an independent unreal plug-in module.
@@ -32,12 +40,15 @@ Agora Unreal SDK is an independent unreal plug-in module.
 Download Agora Unreal SDK from the link, unzip and copy AgoraPlugin folder to "API_Example/ Plugins/AgoraPlugin/" in the Plugins folder of API_Example
 
 ![Alt text](README_Picture/copy_plugin.png?raw=true "PackageProject")
+file. You will use this when you launch the app.
 
-### Compile and run demo.
+### Compile and run demo. 
 
-Open API_Example.uproject with Unreal Editor 4.25 or above.
+1) Open the file named AgoraController.h which is located at "Source/Agora_Unreal_Video/AgoraController.h" and fill in you APP ID.
 
-Package project:
+2) Open API_Example.uproject with Unreal Editor 4.25 or above.
+
+3) Package project:
 
 #### Windows Packaging
 

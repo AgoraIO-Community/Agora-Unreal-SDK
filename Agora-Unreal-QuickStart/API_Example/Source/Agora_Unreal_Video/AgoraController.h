@@ -60,5 +60,5 @@ private:
     agora::rtc::ue4::AgoraRtcEngine* _rtcEnginePtr = nullptr;
     UVideoViewUserWidget* _videoWidget = nullptr;
     UVoiceViewUserWidget* _voiceWidget = nullptr;
-    const char* YOUR_APP_ID = "5db0d12c40354100abd7a8a0adaa1fb8";
+    const char* YOUR_APP_ID = #YOUR_APPID;
 };
