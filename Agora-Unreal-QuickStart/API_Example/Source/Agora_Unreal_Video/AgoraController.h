@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "AgoraRtcEngine.h"
 #include "UVideoTextureObserver.h"
+#include "AgoraGMEngine.h"
+#include "AgoraGMEngineEventHandler.h"
 
 class UVideoViewUserWidget;
 class UVoiceViewUserWidget;
@@ -60,5 +62,7 @@ private:
     agora::rtc::ue4::AgoraRtcEngine* _rtcEnginePtr = nullptr;
     UVideoViewUserWidget* _videoWidget = nullptr;
     UVoiceViewUserWidget* _voiceWidget = nullptr;
-    const char* YOUR_APP_ID = #YOUR_APPID;
+    const char* YOUR_APP_ID = #YOUR_APPID
+    agora::rtc::ue4::AgoraGMEngine* _agoraGMEnginePtr = nullptr;
+    std::shared_ptr<AgoraGMEngineEventHandler> _gmEngineEventHandler; 
 };

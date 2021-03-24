@@ -4,6 +4,7 @@
 #include "AgoraController.h"
 #include "VideoViewUserWidget.h"
 #include "VoiceViewUserWidget.h"
+#include <memory>
 
 using namespace agora::rtc;
 using namespace agora::rtc::ue4;
@@ -48,6 +49,51 @@ int AgoraController::JoinChannel(bool isAudio, const char *channelName) {
     }
     auto ret = _rtcEnginePtr->joinChannel("", channelName, "", 0);
     UE_LOG(LogTemp, Warning, TEXT("JoinChannel ret: %d"), ret);
+
+    _agoraGMEnginePtr = agora::rtc::ue4::AgoraGMEngine::createAgoraGameMediaEngine();
+
+    GMEngineContext context;
+    context.appId = "5db0d12c40354100abd7a8a0adaa1fb8";
+    _gmEngineEventHandler = std::make_shared<AgoraGMEngineEventHandler>();
+    
+    context.eventHandler = _gmEngineEventHandler.get();
+    
+    auto initRet = _agoraGMEnginePtr->initialize(_rtcEnginePtr, context);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  initialize ret: %d"), initRet);
+
+    auto enableSpatializerRet = _agoraGMEnginePtr->enableSpatializer(true, true);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  enableSpatializerRet ret: %d"), enableSpatializerRet);
+
+    auto setRangeAudioTeamIDRet = _agoraGMEnginePtr->setRangeAudioTeamID(324324);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  setRangeAudioTeamIDRet ret: %d"), setRangeAudioTeamIDRet);
+  
+    // auto setRangeAudioTeamIDRet = _agoraGMEnginePtr->setRangeAudioTeamID(324324);
+    // UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  setRangeAudioTeamIDRet ret: %d"), setRangeAudioTeamIDRet);
+  
+    auto setMaxHearAudioCountRet = _agoraGMEnginePtr->setMaxHearAudioCount(324324);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  setMaxHearAudioCountRet ret: %d"), setMaxHearAudioCountRet);
+  
+    auto updateAudioRecvRangeRet = _agoraGMEnginePtr->updateAudioRecvRange(324324);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  updateAudioRecvRangeRet ret: %d"), updateAudioRecvRangeRet);
+  
+    auto setParametersRet = _agoraGMEnginePtr->setParameters("");
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  setParametersRet ret: %d"), setParametersRet);
+  
+    auto enterRoomRet = _agoraGMEnginePtr->enterRoom("ewr", "rewrew", 32342);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  enterRoomRet ret: %d"), enterRoomRet);
+
+    auto renewTokenRet = _agoraGMEnginePtr->renewToken("re32r");
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  renewTokenRet ret: %d"), renewTokenRet);
+
+    auto exitRoomRet = _agoraGMEnginePtr->exitRoom();
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  exitRoomRet ret: %d"), exitRoomRet);
+  
+    auto enableMicRet = _agoraGMEnginePtr->enableMic(false);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  enableMicRet ret: %d"), enableMicRet);
+
+    auto enableSpeakerRet = _agoraGMEnginePtr->enableSpeaker(false);
+    UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  enableSpeakerRet ret: %d"), enableSpeakerRet);
+
     return ret;
 }
 
