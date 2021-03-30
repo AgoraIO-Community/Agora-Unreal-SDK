@@ -22,9 +22,9 @@
 - MAC
 - Windows 64-bit
 
-## Run Project *IMPORTANT*
+## Run Project
 
- ### Create an Account and Obtain an App ID *IMPORTANT*
+ ### Create an Account and Obtain an App ID
 
 在编译和运行 Demo 之前，你需要先获得一个 APP ID。
 
