@@ -21,9 +21,9 @@ You can switch the level to be run in Edit/Project Settings/Default maps of Unre
 - MAC
 - Windows 64-bit
 
-## Run Project *IMPORTANT*
+## Run Project
 
- ### Create an Account and Obtain an App ID *IMPORTANT*
+ ### Create an Account and Obtain an App ID
 
 To build and run the sample application, first obtain an app ID:
 
