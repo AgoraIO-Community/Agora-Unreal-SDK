@@ -35,7 +35,7 @@ To build and run the sample application, first obtain an app ID:
 
 Agora Unreal SDK is an independent unreal plug-in module.
 
-[Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_FULL_SDK.zip)
+[Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_SDK.zip)
 
 Download Agora Unreal SDK from the link, unzip and copy AgoraPlugin folder to "API_Example/ Plugins/AgoraPlugin/" in the Plugins folder of API_Example
 
