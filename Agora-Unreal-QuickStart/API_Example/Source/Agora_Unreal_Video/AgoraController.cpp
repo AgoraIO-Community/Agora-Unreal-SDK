@@ -53,7 +53,7 @@ int AgoraController::JoinChannel(bool isAudio, const char *channelName) {
     _agoraGMEnginePtr = agora::rtc::ue4::AgoraGMEngine::createAgoraGameMediaEngine();
 
     GMEngineContext context;
-    context.appId = "5db0d12c40354100abd7a8a0adaa1fb8";
+    context.appId = YOUR_APP_ID;
     _gmEngineEventHandler = std::make_shared<AgoraGMEngineEventHandler>();
     
     context.eventHandler = _gmEngineEventHandler.get();
@@ -93,6 +93,8 @@ int AgoraController::JoinChannel(bool isAudio, const char *channelName) {
 
     auto enableSpeakerRet = _agoraGMEnginePtr->enableSpeaker(false);
     UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  enableSpeakerRet ret: %d"), enableSpeakerRet);
+
+    _agoraGMEnginePtr->release();
 
     return ret;
 }
