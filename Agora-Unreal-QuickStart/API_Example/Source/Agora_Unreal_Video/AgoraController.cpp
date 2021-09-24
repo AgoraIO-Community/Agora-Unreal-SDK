@@ -28,6 +28,7 @@ void AgoraController::InitEngine() {
     RtcEngineContext _rtcEngineContext;
     _rtcEngineContext.appId = YOUR_APP_ID;
     _rtcEngineContext.eventHandler = this;
+    _rtcEngineContext.areaCode = AREA_CODE::AREA_CODE_CN;
     _rtcEnginePtr->initialize(_rtcEngineContext);
 }
 
@@ -53,12 +54,14 @@ int AgoraController::JoinChannel(bool isAudio, const char *channelName) {
     _agoraGMEnginePtr = agora::rtc::ue4::AgoraGMEngine::createAgoraGameMediaEngine();
 
     GMEngineContext context;
-    context.appId = "5db0d12c40354100abd7a8a0adaa1fb8";
+    context.appId = YOUR_APP_ID;
+    context.rtcEngine = _rtcEnginePtr->m_rtcEngine;
+    context.areaCode = AREA_CODE::AREA_CODE_CN;
     _gmEngineEventHandler = std::make_shared<AgoraGMEngineEventHandler>();
     
     context.eventHandler = _gmEngineEventHandler.get();
     
-    auto initRet = _agoraGMEnginePtr->initialize(_rtcEnginePtr, context);
+    auto initRet = _agoraGMEnginePtr->initialize(context);
     UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  initialize ret: %d"), initRet);
 
     auto enableSpatializerRet = _agoraGMEnginePtr->enableSpatializer(true, true);
@@ -94,6 +97,8 @@ int AgoraController::JoinChannel(bool isAudio, const char *channelName) {
     auto enableSpeakerRet = _agoraGMEnginePtr->enableSpeaker(false);
     UE_LOG(LogTemp, Warning, TEXT("_agoraGMEnginePtr  enableSpeakerRet ret: %d"), enableSpeakerRet);
 
+    _agoraGMEnginePtr->release();
+
     return ret;
 }
 
@@ -113,7 +118,7 @@ void AgoraController::onError(int err, const char* msg) {
 
 void AgoraController::onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed) {
     int build = 0;
-    UE_LOG(LogTemp, Warning, TEXT("onJoinChannelSuccess channel: %s, uid: %u, sdk ver: %s"), channel, uid, _rtcEnginePtr->getVersion(&build));
+    //UE_LOG(LogTemp, Warning, TEXT("onJoinChannelSuccess channel: %s, uid: %u, sdk ver: %s"), channel, uid, _rtcEnginePtr->getVersion(&build));
     if(_videoWidget) {
         _videoWidget->onJoinChannelSuccess(channel, uid, elapsed);
     }
