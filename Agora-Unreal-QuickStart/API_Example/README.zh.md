@@ -34,7 +34,7 @@
 
 ### 下载并且拷贝 Agora Unreal SDK。
 Agora Unreal SDK 是一个独立的 Unreal 插件 module。
-[Agora Unreal SDK](https://download.agora.io/demo/test/AgoraPlugin.zip)
+[Agora Unreal SDK](https://download.agora.io/sdk/release/Agora_Unreal_SDK_3.4.5.246_audio_0926.zip)
 下载链接中 Agora Unreal SDK， 解压后将 AgoraPlugin 文件夹拷贝到 API-Example 的 Plugins 文件夹下 "API-Example/Plugins/AgoraPlugin/"。
 
 ![Alt text](README_Picture/copy_plugin.png?raw=true "PackageProject")
