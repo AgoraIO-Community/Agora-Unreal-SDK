@@ -10,5 +10,5 @@ You can run the demo project according to the README in Agora-Unreal-QuickStart/
 
 - SDK
 
-The SDK release download link saved in release.txt.
+The SDK release download link is saved and maintained in [release.txt](SDK/release.txt).
 
