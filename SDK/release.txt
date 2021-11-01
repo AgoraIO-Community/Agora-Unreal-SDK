@@ -1,6 +1,6 @@
-2021/8/5
+2021/10/30
 
-version: v3.5.0
-url: https://download.agora.io/sdk/release/Agora_Unreal_SDK.zip
+version: v3.5.0.4
+url: https://download.agora.io/sdk/release/Agora_Unreal_SDK_3.5.0.4_video_1101.zip
 
 
