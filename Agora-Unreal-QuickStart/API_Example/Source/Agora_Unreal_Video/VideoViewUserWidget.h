@@ -13,57 +13,70 @@
 
 class AgoraController;
 /**
- * 
+ *
  */
 UCLASS()
 class AGORA_UNREAL_VIDEO_API UVideoViewUserWidget : public UUserWidget
 {
 	GENERATED_BODY()
-    
+
 public:
-    void NativeTick(const FGeometry& MyGeometry, float DeltaTime) override;
-    
-    void NativeConstruct() override;
+	void NativeTick(const FGeometry& MyGeometry, float DeltaTime) override;
 
-    void NativeDestruct() override;
+	void NativeConstruct() override;
 
-    UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
-        UImage* remoteVideo = nullptr;
+	void NativeDestruct() override;
 
-    UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
-        UImage* localVideo = nullptr;
+	UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
+		UImage* remoteVideo = nullptr;
 
-    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
-        UButton* JoinBtn = nullptr;
+	UPROPERTY(BlueprintReadOnly, meta = (BindWidget))
+		UImage* localVideo = nullptr;
 
-    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
-        UButton* LeaveBtn = nullptr;
-    
-    void OnLocalVideoTextureUpdate(const agora::rtc::ue4::VideoTextureFrame& _videoFrame);
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
+		UButton* JoinBtn = nullptr;
 
-    void OnRemoteVideoTextureUpdate(unsigned int uid, const agora::rtc::ue4::VideoTextureFrame& _videoFrame);
-    
-    void SetButtonClickAble(bool enable);
-    
-    void onUserJoined(unsigned int uid);
-    
-    void onUserOffline(unsigned int uid);
-    
-    void onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed);
-    
-    void onLeaveChannel(const agora::rtc::RtcStats& stats);
-    
-    
-    UFUNCTION(BlueprintCallable)
-        void OnJoinButtonClick();
-    
-    UFUNCTION(BlueprintCallable)
-        void OnLeaveButtonClick();
-    
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
+		UButton* LeaveBtn = nullptr;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
+		UButton* PreviousBtn = nullptr;
+
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, meta = (BindWidget))
+		UButton* NextBtn = nullptr;
+
+	void OnLocalVideoTextureUpdate(const agora::rtc::ue4::VideoTextureFrame& _videoFrame);
+
+	void OnRemoteVideoTextureUpdate(unsigned int uid, const agora::rtc::ue4::VideoTextureFrame& _videoFrame);
+
+	void SetButtonClickAble(bool enable);
+
+	void onUserJoined(unsigned int uid);
+
+	void onUserOffline(unsigned int uid);
+
+	void onJoinChannelSuccess(const char* channel, agora::rtc::uid_t uid, int elapsed);
+
+	void onLeaveChannel(const agora::rtc::RtcStats& stats);
+
+
+	UFUNCTION(BlueprintCallable)
+		void OnJoinButtonClick();
+
+	UFUNCTION(BlueprintCallable)
+		void OnLeaveButtonClick();
+
 private:
-    FSlateBrush LocalBrush;
-    FSlateBrush RemoteBrush;
-    FSlateBrush EmptyBrush;
-    AgoraController* _agoraControllerPtr;
-    const char* CHANNEL_NAME = "Hello_Agora";
+	FSlateBrush LocalBrush;
+	FSlateBrush RemoteBrush;
+	FSlateBrush EmptyBrush;
+	AgoraController* _agoraControllerPtr;
+	TArray<unsigned int> RemoteUserIdArray;
+	unsigned int CurrentRemoteIndex = 0;
+	unsigned int CurrentUid = 0;
+	const char* CHANNEL_NAME = "Hello_Agora";
+	UFUNCTION(BlueprintCallable)
+		void onPreviousButtonClick();
+	UFUNCTION(BlueprintCallable)
+		void onNextButtonClick();
 };
